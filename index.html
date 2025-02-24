@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optimum Stream Remote Setup Guide</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Optimum Stream Remote Setup Guide</h1>
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+            <i class="fas fa-moon"></i>
+        </button>
+    </header>
+
+    <main>
+        <section class="welcome-screen" id="welcomeScreen">
+            <h2>Remote Pairing Assistant</h2>
+            <p>A simple step-by-step guide to pair your Optimum Stream remote with your TV.</p>
+            <button id="startGuide" class="start-button">
+                Start Guide <i class="fas fa-arrow-right"></i>
+            </button>
+        </section>
+
+        <div class="guide-container" id="guideContainer" style="display: none;">
+            <div class="progress-bar">
+                <div class="progress" id="progress"></div>
+            </div>
+
+            <section class="slide" id="slide1">
+                <div class="slide-content">
+                    <div class="instructions">
+                        <div class="step-header">
+                            <div class="step-number">Step 1</div>
+                            <h2 class="step-title">Prepare Your Remote</h2>
+                        </div>
+                        <ol class="instruction-list">
+                            <li>Turn on your TV</li>
+                            <li>Remove the back cover of your remote</li>
+                            <li>Insert two AAA batteries following the (+/-) markings</li>
+                            <li>Replace the back cover until it clicks</li>
+                        </ol>
+                    </div>
+                    <div class="remote-preview">
+                        <img src="attached_assets/StreamHomePic.webp" alt="Remote and Stream Box">
+                    </div>
+                </div>
+            </section>
+
+            <section class="slide" id="slide2">
+                <div class="slide-content">
+                    <div class="instructions">
+                        <div class="step-header">
+                            <div class="step-number">Step 2</div>
+                            <h2 class="step-title">Power Up</h2>
+                        </div>
+                        <ol class="instruction-list">
+                            <li>Position your Stream box where the remote can point directly at it</li>
+                            <li>Press the Power button (top-right) on your remote</li>
+                            <li>Wait for the Stream box to Boot up</li>
+                            <li>Press the Home button (below navigation pad)</li>
+                        </ol>
+                    </div>
+                    <div class="remote-preview">
+                        <img src="attached_assets/RemoteGuide.png" alt="Remote Features">
+                    </div>
+                </div>
+            </section>
+
+            <section class="slide" id="slide3">
+                <div class="slide-content">
+                    <div class="instructions">
+                        <div class="step-header">
+                            <div class="step-number">Step 3</div>
+                            <h2 class="step-title">Access Settings</h2>
+                        </div>
+                        <ol class="instruction-list">
+                            <li>Find the Settings icon (gear/cog symbol) on screen</li>
+                            <li>Use the navigation pad to highlight Settings</li>
+                            <li>Press the Select button (center of pad)</li>
+                            <li>Navigate to "Device & Remote Settings"</li>
+                        </ol>
+                    </div>
+                    <div class="remote-preview">
+                        <img src="attached_assets/RemoteGuide.png" alt="Remote Features">
+                    </div>
+                </div>
+            </section>
+
+            <section class="slide" id="slide4">
+                <div class="slide-content">
+                    <div class="instructions">
+                        <div class="step-header">
+                            <div class="step-number">Step 4</div>
+                            <h2 class="step-title">Pair Remote</h2>
+                        </div>
+                        <ol class="instruction-list">
+                            <li>Select "Remotes & Accessories"</li>
+                            <li>Choose "Add Stream Remote"</li>
+                            <li>Point remote at the Stream box</li>
+                            <li>Press and hold Select + Mute buttons</li>
+                            <li>Release when the remote light blinks</li>
+                        </ol>
+                    </div>
+                    <div class="remote-preview">
+                        <img src="attached_assets/RemoteGuide.png" alt="Remote Features">
+                    </div>
+                </div>
+            </section>
+
+            <section class="slide" id="slide5">
+                <div class="slide-content">
+                    <div class="instructions">
+                        <div class="step-header">
+                            <div class="step-number">Step 5</div>
+                            <h2 class="step-title">Configure TV Control</h2>
+                        </div>
+                        <ol class="instruction-list">
+                            <li>Return to "Device & Remote Settings"</li>
+                            <li>Select "Stream Remote"</li>
+                            <li>Choose "Change TV Setup"</li>
+                            <li>Test Volume Up/Down buttons</li>
+                            <li>Select "Yes" if volume changes</li>
+                            <li>If no response, select "No" and pick your TV brand</li>
+                        </ol>
+                    </div>
+                    <div class="remote-preview">
+                        <img src="attached_assets/RemoteGuide.png" alt="Remote Features">
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="navigation" id="navigation">
+            <button id="prevBtn" class="nav-button" disabled>
+                <i class="fas fa-arrow-left"></i> Previous
+            </button>
+            <button id="nextBtn" class="nav-button">
+                Next <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+    </main>
+
+    <footer>
+        <p>Designed and coded by <a href="https://msmelok.github.io/R4_2.0" target="_blank">Muhammad Meluk</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
