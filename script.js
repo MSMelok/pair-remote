@@ -137,15 +137,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Restart button
     document.getElementById('restartGuide').addEventListener('click', () => {
-        const thankYouScreen = document.getElementById('thankYouScreen');
-        thankYouScreen.style.opacity = '0';
-        thankYouScreen.style.transform = 'translateY(-20px)';
-        setTimeout(() => {
-            thankYouScreen.style.display = 'none';
-            welcomeScreen.style.display = 'flex';
-            welcomeScreen.style.opacity = '1';
-            welcomeScreen.style.transform = 'translateY(0)';
-        }, 300);
+        window.location.reload();
     });
 
     // Keyboard navigation
